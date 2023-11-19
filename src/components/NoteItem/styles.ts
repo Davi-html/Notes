@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.input`
+export const Container = styled.div`
     display: flex;
     align-items: center;
 
@@ -17,6 +17,14 @@ export const Container = styled.input`
         border: none;
 
         background:none;
+    }
+
+    .button-delete {
+        color: ${({theme,}) => theme.COLORS.RED}; 
+    }
+
+    .button-add {
+        color: ${({theme,}) => theme.COLORS.ORANGE}; 
     }
 
     > input {
